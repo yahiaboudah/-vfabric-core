@@ -1,0 +1,47 @@
+
+
+plugins:
+
+    Insertion Options:
+        Image:
+            * addBaseType => addBaseType + createImgByElement
+            barCode => addBarCode + setBarCode
+            qrCode => addQrCode + setQrCode
+        Shape:
+            * drawLine => setLineType + setMode
+            * drawPolygon => beginDrawPolygon + endDrawPolygon + discardPolygon
+            freeDraw => startDraw + endDraw
+        Templates:
+            material => getTemplTypeList + getTemplList + getMaterialTypeList + getMaterialList + getSizeList
+    
+    Editor Options:
+        Workflow:
+            * copy => clone
+            * delete => del
+            * group => group + ungroup
+            history => do + undo + historyUpdate
+            * layer => up + down + toFront + toBack
+            * lock => lock + unlock
+        Editing:
+            * controls
+            alignGuide
+            groupTextEdit
+            moveHotKey => up + down + left + right
+        Board:
+            * ruler => rulerEnable + rulerDisable + showGuideline + hideGuideline
+            * dring => startDring + endDring
+            * workspace => big + small + auto + one + setSize + getWorkspace + setWorkspacebg + setCenterFromObject
+
+    Options Options:
+        Display:
+            * centerAlign => centerH + centerV + center + position
+            groupAlign => left + right + xcenter + ycenter + top + bottom 
+            * flip => flip
+        Text:
+            font => getFontList + loadFont + getFontJSON + downFontByJson
+        Image:
+            imageStroke => imageStrokeDraw
+            clipImage => addClipPathToImage + removeClip
+        Shapes:
+            polygonModify => toggleEdit + activeEdit + inActiveEdit
+            
